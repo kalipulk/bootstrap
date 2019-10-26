@@ -6,64 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kali Pulkkinen | Full-Stack Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="styles/portfolio_reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="portfolio_reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap_style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <h1>Kali Pulkkinen</h1>
-        <nav>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="bootstrap_index.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bootstrap_work.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bootstrap_contact.html">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="styles/images/web-development-clipart.png"><img
+                    src="styles/images/web-development-clipart.png" width="30" height="30"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap_index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap_work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap_contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <div class="container-fluid" class="wrapper">
         <h2>Portfolio</h2>
         <div class="row">
-            <div class="column">
-                <div class="card" style="width: 18rem;">
+            <div class="col-md-4">
+                <div class="card">
                     <img src="styles/images/app.jpg" class="card-img-top" alt="smartphone application graphic">
                     <div class="card-body">
                         <p class="card-text">Market Ready Applications</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
                     <img src="styles/images/data.png" class="card-img-top" alt="data analytics">
                     <div class="card-body">
                         <p class="card-text">Data Analytics</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
                     <img src="styles/images/download.jpg" class="card-img-top" alt="laptop with code">
                     <div class="card-body">
                         <p class="card-text">Front-End Web Design</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
                     <img src="styles/images/fullstack.jpg" class="card-img-top" alt="full stack web developer">
                     <div class="card-body">
                         <p class="card-text">Data Bases</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                        <img src="styles/images/tablet.png" class="card-img-top" alt="website design">
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="styles/images/tablet.png" class="card-img-top" alt="website design">
                     <div class="card-body">
                         <p class="card-text">Web Design & Layouts</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
                     <img src="styles/images/workplace.jpg" class="card-img-top" alt="web developer tool kit">
                     <div class="card-body">
                         <p class="card-text">Full-Stack Web Applications</p>
@@ -71,6 +106,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
