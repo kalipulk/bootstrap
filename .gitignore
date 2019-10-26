@@ -54,6 +54,8 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# DS Store for Mac
+**.DS_Store
 # dotenv environment variables file
 .env
 
